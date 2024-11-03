@@ -34,7 +34,7 @@
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="match_parent"
-            android:layout_height="280dp"
+            android:layout_height="202dp"
             app:srcCompat="@drawable/conversor" />
 
         <Space
@@ -59,7 +59,7 @@
                 android:text="Monto en Bs.- "
                 android:textAlignment="center"
                 android:textColor="#FFFFFF"
-                android:textSize="28dp" />
+                android:textSize="24dp" />
 
             <EditText
                 android:id="@+id/editTextMonto"
@@ -146,6 +146,50 @@
             android:hint="Aca aparecera el cambio"
             android:textColorHint="@color/white"
             android:textSize="28dp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="27dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="266dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Introduzca su CI:"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/editTextCI"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="Ingrese CI"
+                android:inputType="number"
+                android:textColorHint="@color/white" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonCalcular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Button" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF" />
 
     </LinearLayout>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -35,5 +35,16 @@ class MainActivity : AppCompatActivity() {
             binding.textView4.text = "El cambio de monedas de ${monto} Bs. a Soles es:" + String.format("%.3f", cambio)
         }
 
+        binding.buttonCalcular.setOnClickListener {
+            val ci = binding.editTextCI.text.toString().toInt()
+            var ciOrdenado = ordenar(ci)
+            binding.textView6.text = "Su CI ordenado es: $ciOrdenado"
+
+        }
     }
+
+    private fun ordenar(ci: Int): String {
+        return ci.toString().toCharArray().sorted().joinToString("")
+    }
+
 }
