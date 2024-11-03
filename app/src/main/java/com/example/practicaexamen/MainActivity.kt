@@ -32,7 +32,7 @@ class MainActivity : AppCompatActivity() {
         binding.buttonSoles.setOnClickListener {
             val monto = binding.editTextMonto.text.toString().toDouble()
             cambio = monto * 2.26
-            binding.textView4.text = "El cambio de monedas de ${monto} Bs. a Soles es:" + String.format("%.3f", cambio)
+            binding.textView4.text = "El cambio de as monedas de ${monto} Bs. a Soles es:" + String.format("%.3f", cambio)
         }
 
         binding.buttonCalcular.setOnClickListener {
